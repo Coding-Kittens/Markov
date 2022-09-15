@@ -76,7 +76,7 @@ else
         }
       }else{
         let word;
-        while(!word)
+        while(!word || this.chains[word].includes(null))
         {
         word = this.words[randomRange(0,this.words.length)];
         }
